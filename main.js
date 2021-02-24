@@ -1,4 +1,5 @@
-document.querySelector('#h1').addEventListener('click',click)
+document.querySelector('#h1').addEventListener('click',click1);
+a1= document.querySelector('.a,b1');console.log(a1);
 arr=[];
 switchB=false;
 arrBool=[];
@@ -20,18 +21,15 @@ function crGame(p){
             */
            arr[a-1][b-1]=`a=${a},b=${b}`
             arrBool[a-1][b-1]=false;
-            // document.body.innerHTML+='<div>vvv</div>'
-            // document.querySelector("#aa"+a+"").innerHTML+=`
-            // <img id="${a}${b}" style="display: inline-block; width: 50px;height: 50px;" src='images/${b}.png'><//img>`
             document.querySelector("#a"+a+"").innerHTML+=`
-            <img id="${a}${b}"  style="display: inline-block; width: 50px;height: 50px;" src='images/${b}.png'><//img>`;
+            <img id="${a}${b}" onclick="click1()" style="display: inline-block; width: 50px;height: 50px;" src='images/${b}.png'><//img>`;
             // document.querySelector("#"+a+b+"").innerHTML="<div>vvv</div>"
 
         }
     }
     console.log(arr);
 }
-function click(){
+function click1(){
     switchB=!switchB;
     
     if (switchB){
